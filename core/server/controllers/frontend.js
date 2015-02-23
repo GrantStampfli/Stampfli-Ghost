@@ -166,7 +166,15 @@ frontendControllers = {
         }); 
     },
     search: function (req, res, next) {
-        res.render('search');
+        var q = 'postgres';
+        config.database.knex('posts')
+            .whereRaw('to_tsvector(title) @@ to_tsquery(?)', [q])
+            .then(function(results){
+                console.log(results);
+                res.render('search');
+            }).catch(function (err) {
+                console.log(err);
+            });
     },
     homepage: function (req, res, next) {
         // Parse the page number
