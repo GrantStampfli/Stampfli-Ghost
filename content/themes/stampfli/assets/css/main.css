@@ -683,3 +683,12 @@ body {
   margin-top: 50px; }
 .post-tag-articleimage {
   display: none; }
+
+@media (max-device-width : 700px) {
+  .blog-header .blog-title {
+    font-size: 39px;
+  }
+  .info-links {
+    display: none;
+  }
+}
