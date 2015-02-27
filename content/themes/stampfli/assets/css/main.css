@@ -1,3 +1,16 @@
+
+.searchBox {
+        position: relative;
+        padding: 10px;
+    }
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #999;
+        background: #fff;
+        padding: 10px;
+    }
+
 .tag-btn {
   display: inline-block;
   text-align: center;
@@ -61,6 +74,7 @@
   content: "\e004"; }
 
 body {
+  clear: right;
   font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;

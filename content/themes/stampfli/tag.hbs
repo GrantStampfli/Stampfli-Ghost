@@ -47,7 +47,7 @@
 <main class="content" role="main">
     
 
-    <h5 class="index-headline normal"><span>Article list for {{tag.name}}</span></h5>
+    <h5 class="index-headline normal"><span>Article list for <i class="fa fa-tag"></i>{{tag.name}}</span></h5>
 
     <div class="cf frame">
     {{#foreach posts}}
@@ -73,7 +73,7 @@
     <h5 class="index-headline bottom"><span>{{pagination}}</span></h5>
 </main>
 <div class="bottom-closer">
-    <div class="background-closer-image" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <div class="background-closer-image" style="background-color:#3f3f3f;">
         Image
     </div>
     <div class="inner">
